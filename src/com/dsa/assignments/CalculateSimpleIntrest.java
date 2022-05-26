@@ -8,12 +8,12 @@ import java.util.Scanner;
 public class CalculateSimpleIntrest {
     public static void main(String[] args) {
         System.out.println(" Please Enter Principal Amount");
-        Scanner principal = new Scanner(System.in);
+        int principal = new Scanner(System.in).nextInt();
         System.out.println(" Please Enter Time in years");
-        Scanner time = new Scanner(System.in);
+        int time = new Scanner(System.in).nextInt();
         System.out.println(" Please Enter Rate");
-        Scanner rate = new Scanner(System.in);
+        int rate = new Scanner(System.in).nextInt();
 
-        System.out.println("Simple Intrest = " + principal.nextInt() * time.nextInt() * rate.nextInt());
+        System.out.println("Simple Intrest = " + principal * time * rate);
     }
 }
